@@ -1,0 +1,110 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}Администраторская часть. Пользователи{% endblock %}
+
+{% block pageHeader %}Администраторская часть. Пользователи{% endblock %}
+
+{% block css %}
+    {{ parent() }}
+    <link rel="stylesheet" href="/web/css/admin_style.css">
+{% endblock %}
+
+{% block pageContent %}
+    {% include 'Admin/admin.top_panel.html.twig' %}
+
+    <div class="container-fluid main-container">
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span8" id="users-table">
+                {#<table class="table table-bordered">#}
+                    {#<tr>#}
+                        {#<td><b>Id</b></td><td><b>Имя</b></td><td><b>Фамилия</b></td><td><b>Email</b></td><td><b>Роль</b></td><td><b>Действия</b></td>#}
+                    {#</tr>#}
+                    {#{% for user in users %}#}
+                        {#<tr>#}
+                            {#<td><b>{{ user.id }}</b></td>#}
+                            {#<td><b>{{ user.name }}</b></td>#}
+                            {#<td><b>{{ user.surname }}</b></td>#}
+                            {#<td><b>{{ user.email }}</b></td>#}
+                            {#<td><b>{{ user.role }}</b></td>#}
+                            {#<td><a href="{{ func.path('admin_user_edit', {'id':user.id}) }}" name="user-edit" p-state user-id="{{ user.id }}">Редактировать</a></td>#}
+                        {#</tr>#}
+                    {#{% endfor %}#}
+                {#</table>#}
+            </div>
+            <div class="span2">
+            </div>
+        </div>
+    </div>
+
+    <div id="userEditModal" class="modal fade">
+        <div class="modal-header">Редактирование пользователя</div>
+        <div class="modal-body">
+            <div class="form-horizontal">
+                <div class="control-group">
+                    <div class="control-label">Логин</div>
+                    <div class="controls">
+                        <input type="text" name="login">
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Имя</div>
+                    <div class="controls">
+                        <input type="text" name="name">
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Фамилия</div>
+                    <div class="controls">
+                        <input type="text" name="surname">
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Email</div>
+                    <div class="controls">
+                        <input type="text" name="email">
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Роль</div>
+                    <div class="controls">
+                        <input type="text" name="role">
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Дата регистрации</div>
+                    <div class="controls">
+                        <span name="date_register"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Дата последнего входа</div>
+                    <div class="controls">
+                        <span name="date_last"></span>
+                    </div>
+                </div>
+                <hr>
+                <div class="control-group">
+                    <div class="control-label">Подтвержден</div>
+                    <div class="controls">
+                        <span name="confirmed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="control-group">
+                <div class="controls">
+                    <input type="button" name="submit" value="Сохранить" class="btn"/>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

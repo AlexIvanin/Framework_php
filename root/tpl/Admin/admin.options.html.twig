@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block title %}Администраторская часть{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="/web/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/web/bootstrap/css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="/web/css/admin_style.css"/>
+{% endblock %}
+
+{% block pageBody %}
+
+    {% include 'Admin/admin.top_panel.html.twig' %}
+
+    <div class="container-fluid main-container">
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span8">
+                <form>
+                    <fieldset class="form-horizontal">
+                        <legend>Настройки</legend>
+                        <div class="control-group inline">
+                            <label class="control-label">Сайт</label>
+                            <div class="controls">
+                                <select id="on_off">
+                                    <option value="on">On</option>
+                                    <option value="off" {% if options[0].value == 'off' %}selected="selected"{% endif %}>Off</option>
+                                </select>
+                                <span id="on_off_success" class="alert-info hide">Изменения сохранены!</span>
+                                <span id="on_off_error" class="alert-error hide">Ошибка при сохранении изменений!</span>
+                            </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="span2">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/web/js/jquery-1.8.3.min.js"></script>
+    <script src="/web/js/admin_options.js"></script>
+{% endblock %}

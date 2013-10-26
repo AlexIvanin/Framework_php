@@ -1,0 +1,64 @@
+# Страницы сайта
+index:
+  path: /
+  action: Front:indexPage
+beta:
+  path: /beta/
+  action: Front:betaPage
+# Авторизация
+login:
+  path: /login/
+  action: Front:loginPage
+
+logout:
+ path: /logout/
+ action: User:logout
+
+# Авторизация. Обработчики
+login_check:
+  path: /login_check/
+  action: User:loginCheck
+  method: POST
+
+# Регистрация
+register:
+  path: /signup/
+  action: Registration:registrationPage
+
+register_second_step:
+  path: /signup/second_step/[*:key]/
+  action: Registration:registerSecondStepPage
+
+register_confirm_page:
+ path: /signup/confirm-page/
+ action: Registration:registerConfirmPage
+
+# Регистрация. Обработчики
+register_first:
+  path: /signup/check/first_step/
+  action: Registration:checkRegisterFirstStep
+  method: POST
+
+# Администрирование
+admin:
+  path: /root/
+  action: Admin:indexPage
+
+
+# Администрирование. Обработчики
+
+# Преподаватель 
+teach:
+ path: /teach/
+ action: Teach:indexPage
+ 
+# API
+api:
+ path: /api/[*:apiname].[*:method]=[*:query]/
+ action: Api:API
+# Пользователь
+user_page:
+ path: /id[*:id]/
+ action: User:userPage
+
+# Пользователь. Обработчики

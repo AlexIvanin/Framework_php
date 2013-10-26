@@ -1,0 +1,3 @@
+#OnStart:checkAndSetLang
+OnStart:betaMode
+OnStart:stat

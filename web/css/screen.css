@@ -1,0 +1,212 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 11, ../sass/screen.sass */
+body {
+  background-color: white;
+  font-family: "Sentinel SSm A", "Sentinel SSm B"; }
+  /* line 14, ../sass/screen.sass */
+  body h1, body h2 {
+    font-family: "Sentinel A", "Sentinel B"; }
+
+/* line 17, ../sass/screen.sass */
+.green {
+  color: #d1e751; }
+
+/* line 20, ../sass/screen.sass */
+.blue-light {
+  color: #4dbce9; }
+
+/* line 23, ../sass/screen.sass */
+.blue {
+  color: #26ade4; }
+
+/* line 26, ../sass/screen.sass */
+.menu {
+  z-index: 9999; }
+
+/* line 29, ../sass/screen.sass */
+a {
+  color: #4dbce9; }
+
+/* line 32, ../sass/screen.sass */
+#logo {
+  text-align: left; }
+  /* line 34, ../sass/screen.sass */
+  #logo h1 {
+    margin: 0;
+    padding: 0 0 0 12px;
+    display: inline;
+    color: #222222;
+    text-shadow: 0 1px 0 white;
+    font-size: 24px;
+    line-height: 1.5em;
+    text-align: left;
+    position: relative; }
+    /* line 44, ../sass/screen.sass */
+    #logo h1 div {
+      text-align: left;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 6px; }
+      /* line 50, ../sass/screen.sass */
+      #logo h1 div span {
+        position: absolute;
+        line-height: 4px; }
+      /* line 53, ../sass/screen.sass */
+      #logo h1 div .green {
+        left: 0;
+        bottom: 12px; }
+      /* line 56, ../sass/screen.sass */
+      #logo h1 div .blue-light {
+        left: 0;
+        bottom: 6px; }
+      /* line 59, ../sass/screen.sass */
+      #logo h1 div .black {
+        left: 0;
+        bottom: 0; }
+
+/* line 63, ../sass/screen.sass */
+#nav {
+  margin: 10px 0;
+  z-index: 9999; }
+  /* line 66, ../sass/screen.sass */
+  #nav li {
+    line-height: 2.4em;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B"; }
+    /* line 71, ../sass/screen.sass */
+    #nav li:hover {
+      color: #4dbce9; }
+    /* line 73, ../sass/screen.sass */
+    #nav li.active {
+      color: #26ade4; }
+
+/* line 76, ../sass/screen.sass */
+.slide .container {
+  position: relative; }
+  /* line 78, ../sass/screen.sass */
+  .slide .container ul {
+    list-style-type: none;
+    padding: 0 120px;
+    margin: 0; }
+    /* line 82, ../sass/screen.sass */
+    .slide .container ul li {
+      margin: 0;
+      padding: 24px 0 24px 120px;
+      position: relative;
+      font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B";
+      font-size: 16px;
+      line-height: 24px;
+      color: #999999; }
+      /* line 90, ../sass/screen.sass */
+      .slide .container ul li i {
+        position: absolute;
+        left: 0;
+        top: 24px;
+        color: #26ade4; }
+
+/* line 96, ../sass/screen.sass */
+#slide2, #slide5 {
+  padding-top: 144px; }
+
+/* line 99, ../sass/screen.sass */
+#slide3 {
+  padding-bottom: 144px; }
+  /* line 101, ../sass/screen.sass */
+  #slide3 i {
+    color: #d1e751; }
+
+/* line 105, ../sass/screen.sass */
+#slide4 .signupform {
+  width: 480px;
+  margin: 48px auto;
+  border-radius: 5px;
+  background-color: transparent; }
+  /* line 110, ../sass/screen.sass */
+  #slide4 .signupform h1 {
+    font-family: "Sentinel A", "Sentinel B";
+    color: #d1e751; }
+  /* line 113, ../sass/screen.sass */
+  #slide4 .signupform h2 {
+    font-family: "Sentinel A", "Sentinel B"; }
+  /* line 116, ../sass/screen.sass */
+  #slide4 .signupform p span {
+    color: #d1e751; }
+  /* line 118, ../sass/screen.sass */
+  #slide4 .signupform .ck_guarantee {
+    font-size: 12px;
+    color: #666666; }
+  /* line 121, ../sass/screen.sass */
+  #slide4 .signupform #ck_success_msg {
+    background-color: #d1e751;
+    padding: 6px 12px;
+    color: black;
+    text-shadow: 0 0 0;
+    border-radius: 5px; }
+  /* line 127, ../sass/screen.sass */
+  #slide4 .signupform .control_group, #slide4 .signupform .ck_control_group {
+    padding: 6px 0; }
+    /* line 129, ../sass/screen.sass */
+    #slide4 .signupform .control_group label, #slide4 .signupform .ck_control_group label {
+      width: 35%;
+      text-align: right;
+      padding-right: 12px;
+      font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B";
+      font-size: 16px;
+      line-height: 36px;
+      float: left;
+      box-sizing: border-box; }
+    /* line 138, ../sass/screen.sass */
+    #slide4 .signupform .control_group input, #slide4 .signupform .ck_control_group input {
+      float: left;
+      width: 65%;
+      padding: 9px 18px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      border: none; }
+  /* line 145, ../sass/screen.sass */
+  #slide4 .signupform .btn {
+    background-color: #d1e751;
+    color: black;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 0;
+    margin-top: 18px; }
+
+/* line 155, ../sass/screen.sass */
+#slide5 {
+  text-align: center;
+  padding-bottom: 144px; }
+  /* line 158, ../sass/screen.sass */
+  #slide5 img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    border: solid 2px white;
+    opacity: 1;
+    width: 120px;
+    margin: 12px 48px 0 0; }
+
+/* line 171, ../sass/screen.sass */
+#decorative {
+  position: absolute;
+  right: 0;
+  bottom: -95px;
+  z-index: 999; }
+
+/* line 177, ../sass/screen.sass */
+.bookteaser {
+  padding: 0; }
+
+/* line 180, ../sass/screen.sass */
+.container p {
+  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B"; }

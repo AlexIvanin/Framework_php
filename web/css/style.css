@@ -1,0 +1,362 @@
+/* Global */
+
+body {
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #8a8683;
+	background-color:#ffffff;
+}
+img {
+	max-width: 100%;
+}
+a:link {
+	color: #26ADE4;
+	text-decoration: none;
+}
+a:hover {
+	color: #4DBCE9;
+	text-decoration: none;
+}
+a:visited {
+	color: #4DBCE9;
+	text-decoration: none;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
+
+
+
+/* Navigation */
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:auto;
+	background-color:rgba(255,255,255,0.85);
+	border-bottom: 1px rgba(240,240,240,0.85) solid;
+	z-index:100;
+}
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
+#nav {
+	text-align: right;
+	margin: 30px 0 0 0;
+}
+.navigation{
+	float: right;
+	list-style: none;
+	margin: 0;
+}
+.navigation li{
+	float: left;
+	padding:0 0 0 50px;
+}
+.navigation li:hover{
+	cursor:pointer;
+	color: #4DBCE9;
+}
+
+.navigation .active{
+	cursor:pointer;
+	color: #4DBCE9;
+}
+
+
+
+
+/* General Slides */
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:48px 0;
+}
+
+
+
+/* Slide 1 */
+
+#slide1{
+	background-image:url(http://storage.fixlend.com/img/2013-07/06/z693lurqcubadygko94glig39.jpg);
+	background-color:#ddd;
+	box-shadow: inset 0 6px 12px 0 #000;
+	border-top: 1px #000 solid;
+	border-bottom: 1px #000 solid;
+}
+#slide1 h1 {
+	font-size: 64px;
+	letter-spacing: -1px;
+	line-height: 0px;
+	font-weight: 700;
+	padding: 0;
+	margin: 0.7em 0 0.7em;
+	text-shadow: 0 3px 5px #000;
+}
+#slide1 h2 {
+	font-size: 32px;
+	color: #fff;
+	line-height: 42px;
+	font-weight: 700;
+	text-shadow: 0 2px 3px #000;
+}
+
+#slide1 p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #aaa;
+	margin: 0.8em 0 0;
+	text-shadow: 0 2px 3px #000;
+}
+
+
+
+
+/* Slide 2 */
+
+#slide2 {
+	background-color: #fff;
+	color:#333;
+}
+#slide2 h1 {
+	font-size: 36px;
+	letter-spacing: -1px;
+	line-height: 0px;
+	color:#333;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+}
+
+#slide2 h1:before {
+	content: "";
+	display: block;
+	border-top: solid 1px black;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+#slide2 h1 span {
+	background: #fff;
+	padding: 0 20px;
+	position: relative;
+	z-index: 5;
+}
+#slide2 h2 {
+	font-size: 21px;
+	color: #666;
+	line-height: 32px;
+	padding: 24px 0;
+	font-weight: 400;
+}
+
+
+
+
+/* Slide 3 */
+
+#slide3 {
+	background-color: #fff;
+	color:#333;
+}
+#slide3 h1 {
+	font-size: 36px;
+	letter-spacing: -1px;
+	line-height: 0px;
+	color:#333;
+	font-weight: 700;
+	position: relative;
+	text-align: center;
+}
+
+#slide3 h1:before {
+	content: "";
+	display: block;
+	border-top: solid 1px black;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+#slide3 h1 span {
+	background: #fff;
+	padding: 0 20px;
+	position: relative;
+	z-index: 5;
+}
+#slide3 h2 {
+	font-size: 21px;
+	color: #666;
+	line-height: 32px;
+	padding: 24px 0;
+	font-weight: 400;
+}
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+.menu {
+	position: absolute !important;
+}
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+	padding:0;
+}
+
+.slide .container ul {
+	padding: 0 !important;
+}
+
+.slide .container li {
+	text-align: left !important;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:48px 0;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+#content h1:before {
+	display: none;
+}
+
+#content h1 {
+	line-height: 48px;
+}
+
+#content h1 span {
+	padding: 0;
+}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	margin:5px 0;
+	display: none;
+}
+
+.navigation{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:48px 0;
+}
+
+.slide .container ul {
+	padding: 0 !important;
+}
+
+.slide .container li {
+	text-align: left !important;
+}
+
+#content h1:before {
+	display: none;
+}
+
+#content h1 {
+	line-height: 48px;
+}
+
+#content h1 span {
+	padding: 0;
+}
+
+
+}
+
+
+
+

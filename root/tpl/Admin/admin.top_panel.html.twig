@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs">
+    <li {% if path == func.path('admin') %}class="active"{% endif %}>
+        <a href="{{ func.path('admin') }}">Главная страница</a>
+    </li>
+    <li {% if path == func.path('admin_users') %}class="active"{% endif %}>
+        <a href="{{ func.path('admin_users') }}">Пользователи</a>
+    </li>
+</ul>
